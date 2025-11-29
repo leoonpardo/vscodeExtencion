@@ -1,68 +1,169 @@
 {
-  "name": "ipardo",
-  "displayName": "iPardo",
-  "description": "desarrollado por manuel estudiante del instituto pardo simulanodo el comportamiento de modos estilo VIM",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.106.1"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-    "contributes": {
-  "commands": [
-    {
-      "command": "myModal.toggle",
-      "title": "Mover hacia abajo"
-    },    {
-      "command": "myModal.eCommand",
-      "title": "Mover hacia abajo"
-        },    {
-      "command": "myModal.rCommand",
-      "title": "Mover hacia abajo"
-    }
+	"name": "ipardo",
+	"displayName": "iPardo",
+	"description": "desarrollado por manuel estudiante del instituto pardo simulanodo el comportamiento de modos estilo VIM",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.106.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+		"contributes": {
+	"commands": [
+		{
+			"command": "myModal.toggle",
+			"title": "Mover hacia abajo"
+		},    {
+			"command": "myModal.aCommand",
+			"title": "Mover hacia abajo"
+						},    {
+			"command": "myModal.hCommand",
+			"title": "Mover hacia abajo"
+				},    {
 
-  ]
+			"command": "myModal.vCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.cCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.zCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.rCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.oCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.pCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.uCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.tabCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.dCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.gCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.nCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.wCommand",
+			"title": "Mover hacia abajo"
+		}
+
+
+	]
 
 ,
-  "keybindings": [
-    {
-      "key": ";",
-      "command": "myModal.toggle",
-      "when": "editorTextFocus"
-    },    {
-      "key": "space",
-      "command": "myModal.spaceCommand",
-      "when": "editorTextFocus"
-    },    {
+	"keybindings": [
+		{
+			"key": ";",
+			"command": "myModal.toggle",
+			"when": "editorTextFocus"
+		},    {
+			"key": "w",
+			"command": "myModal.wCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "o",
+			"command": "myModal.oCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "p",
+			"command": "myModal.pCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "r",
+			"command": "myModal.rCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "g",
+			"command": "myModal.gCommand",
+			"when": "editorTextFocus"
+					},    {
 
-      "key": "e",
-      "command": "myModal.eCommand",
-      "when": "editorTextFocus"
-    }
+			"key": "a",
+			"command": "myModal.aCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "n",
+			"command": "myModal.nCommand",
+			"when": "editorTextFocus"
+					},    {
 
-  ]
+			"key": "c",
+			"command": "myModal.cCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "z",
+			"command": "myModal.zCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "d",
+			"command": "myModal.dCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "tab",
+			"command": "myModal.tabCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "u",
+			"command": "myModal.uCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "v",
+			"command": "myModal.vCommand",
+			"when": "editorTextFocus"
+		},    {
+					
+			"key": "space",
+			"command": "myModal.spaceCommand",
+			"when": "editorTextFocus"
+		},    {
+
+			"key": "h",
+			"command": "myModal.hCommand",
+			"when": "editorTextFocus"
+		}
+
+	]
 }
  ,
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.106.1",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "@typescript-eslint/eslint-plugin": "^8.45.0",
-    "@typescript-eslint/parser": "^8.45.0",
-    "eslint": "^9.36.0",
-    "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2"
-  }
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.106.1",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "22.x",
+		"@typescript-eslint/eslint-plugin": "^8.45.0",
+		"@typescript-eslint/parser": "^8.45.0",
+		"eslint": "^9.36.0",
+		"typescript": "^5.9.3",
+		"@vscode/test-cli": "^0.0.11",
+		"@vscode/test-electron": "^2.5.2"
+	}
 }
