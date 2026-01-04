@@ -569,7 +569,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) return;
 
-		editor.edit(editBuilder => {
+		editor.edit(async editBuilder => {
 			const selections = editor.selections;
 
 			for (const selection of selections) {
@@ -593,10 +593,27 @@ export function activate(context: vscode.ExtensionContext) {
 					editBuilder.insert(position, 'N')
 									
 				}else if (myvar === 1) {
-				vscode.commands.executeCommand('workbench.action.nextEditor');
-				}else if (myvar === 2) {
-				vscode.commands.executeCommand('cursorLineStart');
+				      const config = vscode.workspace.getConfiguration("editor");
+
+					// activar
+					await config.update(
+					"stickyScroll.enabled",
+					true,
+					vscode.ConfigurationTarget.Global
+					);
+
+					// esperar 2 segundos
+					setTimeout(async () => {
+					await config.update(
+						"stickyScroll.enabled",
+						false,
+						vscode.ConfigurationTarget.Global
+					);
+					}, 4000);				
+							
 				
+				}else if (myvar === 2) {
+				    vscode.commands.executeCommand('cursorLineStart');
 				}
 			}
 			myStatus.text = `MODE = ${myvar}`;
@@ -1123,7 +1140,7 @@ export function activate(context: vscode.ExtensionContext) {
      				const position = editor.selection.active; // posición actual del cursor
                     marca_line = position.line;         // número de línea (0-based)
                     vscode.window.showInformationMessage("linea capturada -> z");
-					
+				    myvar = 1	
 				}else if (myvar === 4) {
 					editor.edit(editBuilder => {
 						editBuilder.insert(position, '""');
