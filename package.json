@@ -1,0 +1,304 @@
+{
+	"name": "ipardo",
+	"displayName": "iPardo",
+	"description": "desarrollado por manuel estudiante del instituto pardo simulanodo el comportamiento de modos estilo VIM ws",
+	"version": "0.4.5",
+	"engines": {
+		"vscode": "^1.106.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [], 
+	"main": "./out/extension.js",
+		"contributes": {
+	"commands": [
+		{
+			"command": "myModal.toggle",
+			"title": "Mover hacia abajo"
+		},    {
+			"command": "myModal.aCommand",
+			"title": "Mover hacia abajo"
+						},    {
+						"command": "myModal.xCommand",
+			"title": "Mover hacia abajo"
+						},    {
+						"command": "myModal.completCommand",
+			"title": "Mover hacia abajo"
+						},    {
+			
+			"command": "myModal.hCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.bakspCommand",
+			"title": "Mover hacia abajo"
+                },    {
+			"command": "myModal.sCommand",
+			"title": "Mover hacia abajo"
+								
+				},    {
+			"command": "myModal.vCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.iCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.enterCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.cCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.zCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.rCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.oCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.pCommand",
+			"title": "Mover hacia abajo"
+				},    {
+
+			"command": "myModal.uCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.tabCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.unoCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.dCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.gCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.kCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.nCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.lCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.fCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.mCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.tCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.bCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.yCommand",
+			"title": "Mover hacia abajo"
+				},    {
+			"command": "myModal.jCommand",
+			"title": "Mover hacia abajo"
+	},    {
+			"command": "myModal.qCommand",
+			"title": "Mover hacia abajo"
+	},    {
+			"command": "myModal.eCommand",
+			"title": "Mover hacia abajo"
+			
+							},    {
+			"command": "myModal.wCommand",
+			"title": "Mover hacia abajo"
+		}
+
+
+	]
+,
+	"keybindings": [
+		{
+			"key": ",",
+			"command": "myModal.toggle",
+			"when": "editorTextFocus"
+		},{
+			"key": "w",
+			"command": "myModal.wCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "q",
+			"command": "myModal.qCommand",
+			"when": "editorTextFocus"
+			
+					},    {
+					
+			"key": "k",
+			"command": "myModal.kCommand",
+			"when": "editorTextFocus"
+					},    {
+					
+								"key": "f",
+			"command": "myModal.fCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "o",
+			"command": "myModal.oCommand",
+			"when": "editorTextFocus"
+				},    {
+			"key": "2",
+			"command": "myModal.completCommand",
+			"when": "editorTextFocus"
+				},    {
+			"key": "e",
+			"command": "myModal.eCommand",
+			"when": "editorTextFocus"
+				},    {
+										"key": "i",
+			"command": "myModal.iCommand",
+			"when": "editorTextFocus"
+						},    {
+												"key": "x",
+			"command": "myModal.xCommand",
+			"when": "editorTextFocus"
+						},    {
+										"key": "y",
+			"command": "myModal.yCommand",
+			"when": "editorTextFocus"
+						},    {
+		
+										"key": "s",
+			"command": "myModal.sCommand",
+			"when": "editorTextFocus"
+				
+							},    {
+													"key": "t",
+			"command": "myModal.tCommand",
+			"when": "editorTextFocus"
+							},    {
+				
+										"key": "m",
+			"command": "myModal.mCommand",
+			"when": "editorTextFocus"
+							},    {
+							
+											"key": "b",
+			"command": "myModal.bCommand",
+			"when": "editorTextFocus"
+							},    {
+						
+										"key": "j",
+			"command": "myModal.jCommand",
+			"when": "editorTextFocus"
+							},    {
+										"key": "l",
+			"command": "myModal.lCommand",
+			"when": "editorTextFocus"
+							},    {
+			"key": "backspace",
+			"command": "myModal.bakspCommand",
+			"when": "editorTextFocus"
+					},    {
+			
+							"key": "enter",
+			"command": "myModal.enterCommand",
+			"when": "editorTextFocus"
+					},    {
+	
+			"key": "1",
+			"command": "myModal.unoCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "tab",
+			"command": "myModal.closeBuscador",
+			"when": "findInputFocussed"
+					},    {
+			"key": "p",
+			"command": "myModal.pCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "r",
+			"command": "myModal.rCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "g",
+			"command": "myModal.gCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "a",
+			"command": "myModal.aCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "n",
+			"command": "myModal.nCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "c",
+			"command": "myModal.cCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "z",
+			"command": "myModal.zCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "d",
+			"command": "myModal.dCommand",
+			"when": "editorTextFocus"
+					},    {
+
+			"key": "tab",
+			"command": "myModal.tabCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "u",
+			"command": "myModal.uCommand",
+			"when": "editorTextFocus"
+					},    {
+			"key": "v",
+			"command": "myModal.vCommand",
+			"when": "editorTextFocus"
+		},    {
+					
+			"key": "space",
+			"command": "myModal.spaceCommand",
+			"when": "editorTextFocus"
+		},    {
+
+			"key": "h",
+			"command": "myModal.hCommand",
+			"when": "editorTextFocus"
+		}
+
+	]
+}
+ ,
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.106.1",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "22.x",
+		"@typescript-eslint/eslint-plugin": "^8.45.0",
+		"@typescript-eslint/parser": "^8.45.0",
+		"eslint": "^9.36.0",
+		"typescript": "^5.9.3",
+		"@vscode/test-cli": "^0.0.11",
+		"@vscode/test-electron": "^2.5.2"
+	}
+}
